@@ -5,10 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Game</title>
     <link rel="stylesheet" href="../resources/css/styles/game.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="icon" href="../resources/images/game-console-gamepad-svgrepo-com.svg" type="images/svg">
 </head>
 <body>
-    
+    <header class="cabecera">
+        <h1 class="titulo">Aprende a Multiplicar<i class="material-symbols-outlined">Calculate</i></h1>
+    </header>
+
+    <div class="contenedor_main">
+        <div class="contenedor_num">
+            <h2 class="subtitulo">Selecciona el número dándole clic!</h2>
+            <i class="fa-solid fa-hand-point-down fa-bounce"></i>
+            <div class="contenedor_sel" id="contenedor_sel">
+                <button class="btnNums" id="num1">1</button>
+                <button class="btnNums" id="num2">2</button>
+                <button class="btnNums" id="num3">3</button>
+                <button class="btnNums" id="num4">4</button>
+                <button class="btnNums" id="num5">5</button>
+                <button class="btnNums" id="num6">6</button>
+                <button class="btnNums" id="num7">7</button>
+                <button class="btnNums" id="num8">8</button>
+                <button class="btnNums" id="num9">9</button>
+                <button class="btnNums" id="num10">10</button>
+            </div>
+            <div class="contenedor_func" id="contenedor_func">
+                <a href="../pages/main.html"><button class="options" id="return">Inicio
+                    <i class="fa-solid fa-house-chimney fa-fade"></i></button>
+                </a>
+                <button class="options" id="again">De nuevo<i class="fa-solid fa-arrows-rotate fa-spin"></i></button>
+            </div> 
+        </div>
+        <div class="contenedor_board">
+            <div class="contenedor_op" id="contenedor_op1">
+                <h1 class="problema" id="problema1">Problema 1 -> </h1>
+                <button class="multiplicando" id="multiplicando1"></button><p id="signo_mul">☓</p>
+                <button class="multiplicador" id="multiplicador1"></button><p id="signo_igual">=</p>
+                <div class="producto" id="producto1"></div>
+                <button class="btnRes" id="res1">Responder</button>
+                <div class="validacion" id="validacion1"></div>
+            </div>
+            <div class="contenedor_op" id="contenedor_op2">
+                <h1 class="problema" id="problema2">Problema 2 -> </h1>
+                <button class="multiplicando" id="multiplicando2"></button><p id="signo_mul">☓</p>
+                <button class="multiplicador" id="multiplicador2"></button><p id="signo_igual">=</p>
+                <div class="producto" id="producto2"></div>
+                <button class="btnRes" id="res2">Responder</button>
+                <div class="validacion" id="validacion2"></div>
+            </div>
+            <div class="contenedor_op" id="contenedor_op3">
+                <h1 class="problema" id="problema3">Problema 3 -> </h1>
+                <button class="multiplicando" id="multiplicando3"></button><p id="signo_mul">☓</p>
+                <button class="multiplicador" id="multiplicador3"></button><p id="signo_igual">=</p>
+                <div class="producto" id="producto3"></div>
+                <button class="btnRes" id="res3">Responder</button>
+                <div class="validacion" id="validacion3"></div>
+            </div>
+            <div class="contenedor_op" id="contenedor_op4">
+                <h1 class="problema" id="problema4">Problema 4 -> </h1>
+                <button class="multiplicando" id="multiplicando4"></button><p id="signo_mul">☓</p>
+                <button class="multiplicador" id="multiplicador4"></button><p id="signo_igual">=</p>
+                <div class="producto" id="producto4"></div>
+                <button class="btnRes" id="res4">Responder</button>
+                <div class="validacion" id="validacion4"></div>
+            </div>
+            <div class="contenedor_op" id="contenedor_op5">
+                <h1 class="problema" id="problema5">Problema 5 -> </h1>
+                <button class="multiplicando" id="multiplicando5"></button><p id="signo_mul">☓</p>
+                <button class="multiplicador" id="multiplicador5"></button><p id="signo_igual">=</p>
+                <div class="producto" id="producto5"></div>
+                <button class="btnRes" id="res5">Responder</button>
+                <div class="validacion" id="validacion5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor_tks" id="contenedor_tks"></div>
+
     <script src="../resources/js/scripts/game.js"></script>
+    <script src="https://kit.fontawesome.com/0250e4a0b8.js" crossorigin="anonymous"></script>
 </body>
 </html>
